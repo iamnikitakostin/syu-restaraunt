@@ -1,0 +1,89 @@
+.app__menu {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #B34431;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.app__menu-categories {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.app__menu-categories li {
+    list-style: none;
+}
+
+.app__menu-categories > div {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.app__menu-categories > div > div {
+    height: 100%;
+}
+
+.menu__category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__category-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vh;
+    padding: 2rem 0;
+}
+
+.menu__category-items p {
+    text-align: left;
+}
+
+.menu__category-name {
+    width: 100%;
+}
+
+.menu__category h2 {
+    padding: 1rem;
+    border-bottom: 5px solid #cbc5b1;
+}
+
+.menu__category h3 {
+    text-align: left;
+}
+
+
+.app__menu-categories .carousel-status{
+    font-family: "Kodchasan" !important;
+}
+
+.app__menu-categories .carousel .slider-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu__category-items {
+        flex-wrap: nowrap;
+        overflow: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__menu-categories {
+        margin: auto;
+    }
+
+    .menu__category-items {
+        gap: 0.5rem;
+    }
+
+}
