@@ -5,7 +5,7 @@
 .headtext__main {
     font-size: 96px;
     font-weight: 200;
-    text-shadow: -13px 17px 18px black;
+    text-shadow: -13px 17px 18px var(--color-bg);
     line-height: 100px;
     letter-spacing: 0.04em;
 }
@@ -37,7 +37,7 @@
 }
 
 .custom__button {
-    background-color: #B34331;
+    background-color: var(--color-red);
     border: 1px solid rgba(255, 255, 255, .25);
     color: white;
     border-radius: 1em;

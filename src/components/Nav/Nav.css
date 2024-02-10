@@ -4,12 +4,8 @@
     gap: 1rem;
 }
 
-.app__navbar-links a {
-    transition: border-bottom 1.3s ease-in-out;
-}
-
 .app__navbar-links a:hover {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid var(--color-gray);
 }
 
 
@@ -23,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: black;
+    background: var(--color-bg);
     transition: 0.5s ease;
     flex-direction: column;
     z-index: 5;
@@ -31,7 +27,7 @@
 
 .app__navbar-smallscreen_overlay .overlay__close {
     font-size: 27px;
-    color: var(--color-lightSilver);
+    color: var(--color-gray);
     cursor: pointer;
     position: absolute;
     top: 20px;
@@ -45,10 +41,9 @@
 .app__navbar-smallscreen_links li {
     margin: 2rem;
     cursor: pointer;
-    color: var(--color-lightSilver);
+    color: var(--color-gray);
     font-size: 2rem;
     text-align: center;
-    font-family: var(--font-base);
 }
 
 @media screen and (max-width: 1150px) {
